@@ -1,0 +1,78 @@
+1) Unpack "registration-v.1.1.rar" in the site root or copy the files from the archive in their coresponding folders in the site root.
+	For Example:
+	All .php files (located in: root\cmp) have to be placed in cmp folder (located in: root\cmp) of the site root.
+
+2) Create a component (Go to Control Panel(cp) -> System -> Components -> Add) and set the following values:  
+
+	2.1) system name 		-> register
+	2.2) public name 		-> Register
+	2.3) PHP Class Name 	-> cmp/front/Registrate
+	
+	and click Save.
+	
+	2.4) Go to Module settings and update the settings to suit your needs. All available settings are listed in step 6)
+	
+3) Create a page (Go to Control Panel(cp) -> System -> Pages -> Add) and set the following values:
+
+	3.1) system name 	-> register
+	3.2) public name 	-> Register
+	3.3) Component Name -> register
+
+	and click Update.
+
+4) Register Profile page in Login component (Go to Control Panel(cp) -> System -> Components)
+
+	4.1) Find component "login" and click on "Module Settings"
+	4.2) Choose Register Page -> register	
+	
+5) Include lingual variables:
+
+	5.1) Go to Control Panel(cp) -> System -> Languages -> "Import from a File" (default English version is provided)
+	5.2) choose en.ini file
+	5.3) click "Import from file"
+
+Click registrate in login area.		
+
+6) Settings:
+Go to Control Panel(cp) -> System -> Components -> Register Module Settings
+
+	6.1) Form Template 
+	    - Default value is cmp-form.tpl but can accomodate custom template (located in: themes/your_theme/tpl)
+	
+	6.2) Captcha settings:
+		ttf:alger.ttf			The font used for the captcha located in cms\basic\scripts\ttf
+		width:110               Captcha dimentions - width
+		height:30               Captcha dimentions - height
+		lenght:6                Lenght in digits
+		mode:2                  // NEEDS CLARIFICATION
+		mime:png                Image type generated
+		text_size:17            Text size
+		bg_color:#F1F1F1        Background Color
+		text_color:#6F6F6F      Text color
+		line_color:#D7D7D7      Line color
+		noise_color:#D7D7D7     Noise color
+		num_lines:5             Number of lines
+		noise_level:3           Noise Level
+	
+	6.3) Auto login  Yes/No 
+	    - If set to Yes the newly registered user will be automaticly loged in
+		
+    6.4) Auto Activation Yes/No
+        - If set to Yes the newly registered user will be active 
+        
+    6.5) Use Free Password Yes/No
+    	If set to Yes 	- validate any text
+    	If set to No 	- password must contain at least one symbol from A-Z, a-z and 0-9
+    
+    6.6) User level
+        - This is the role for the newly registered users
+		
+    6.7) Destination after registration
+        - The page where the newly registered users will be redirected upon completion
+		 
+    6.8) Permission Fields
+        - Set The fields that will be mandatory 
+		 
+That is all :)
+
+Thank you for your interest and enjoy SBND F&CMS - Framework & CMS for PHP developers.

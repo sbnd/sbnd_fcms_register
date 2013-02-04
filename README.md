@@ -1,4 +1,9 @@
 sbnd_fcms_register
 ==================
 
-Register package
+Registration package
+
+Frontend Register users page 
+
+backend component(s) : YES (users module) 
+frontend component(s): YES
