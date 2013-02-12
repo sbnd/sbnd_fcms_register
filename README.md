@@ -1,9 +1,7 @@
-sbnd_fcms_register
+Registration Component
 ==================
+Component allowing self-registration of a user from the frontend with a predefined role. The role is created in advance into the backend by the Admin user. 
 
-Registration package
+The component has a frontend only.
 
-Frontend Register users page 
-
-backend component(s) : YES (users module) 
-frontend component(s): YES
+For more information: http://fcms.sbnd.net/
