@@ -8,4 +8,4 @@ Component allowing self-registration of a user from the frontend with a predefin
 
 **The component has a frontend only.**
 
-**For more information: http://fcms.sbnd.net/**
+For more information: **http://fcms.sbnd.net/**
